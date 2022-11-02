@@ -17,6 +17,7 @@ const Products = () => {
   if(productsSelector.isLoading){
     return <h3>Loading...</h3>
   }
+  console.log(productsSelector);
   return (
     <div>{
       productsSelector.data.map((product) => {
